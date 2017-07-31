@@ -1,0 +1,28 @@
+@(respuesta: String)
+
+
+@main{
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Resultado del Test.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+}{
+	
+
+	<div class="container mtb">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 centered">
+				<h1>La respuesta es @respuesta</h1>
+
+				<h1>¿ Está conforme con la respuesta ?</h1>
+				<form action="@routes.Application.store()" method="POST" enctype="multipart/form-data">
+					<input class="btn btn-info" type="submit" value="Si" />
+					<a href="@routes.Application.index()" type="button" class="btn btn-danger">No</a>
+				</form>
+			</div>
+		</div>
+	</div>
+}

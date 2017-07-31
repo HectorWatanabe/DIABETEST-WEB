@@ -1,0 +1,12 @@
+@relation diabetes
+@attribute 'numeroembarazos' real
+@attribute 'glucosaayuno' real
+@attribute 'presion' real
+@attribute 'mediatriceps' real
+@attribute 'insulina' real
+@attribute 'indicemasacorporal' real
+@attribute 'funcionpedigree' real
+@attribute 'edad' real
+@attribute 'diabetes' { negativo, positivo}
+@data
+2,100,70,30,40,0.700,0.245,40,?

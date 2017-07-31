@@ -1,0 +1,51 @@
+@main{
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Test de Diabetes.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+}{
+	<div class="container mtb">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 centered">
+				<form action="@routes.Application.evaluation()" method="POST" enctype="multipart/form-data">
+					<h4>Número de embarazos</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="numeroembarazos" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Glucosa</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="glucosaayuno" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Presión</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="presion" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Ancho del brazo</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="mediatriceps" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Insulina</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="insulina" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Índice de masa corporal</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="indicemasacorporal" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Función pedigree diabetes</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="funcionpedigree" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<h4>Edad</h4>
+		 			<div class="hline"></div><br>
+			    	<input type="text" name="edad" class="form-control" placeholder="Completa el campo"/>
+			    	<br>
+			    	<input class="btn btn-info" type="submit" value="Enviar" />
+				</form>
+			</div>
+		</div>
+	</div>
+}

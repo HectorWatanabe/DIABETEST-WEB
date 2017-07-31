@@ -1,0 +1,63 @@
+@(summary: Summary)
+
+@main{
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Nosotros.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+}{
+	<div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-6">
+	 			<img class="img-responsive" src="@routes.Assets.at("assets/img/software.png")" alt="">
+	 		</div>
+	 		
+	 		<div class="col-lg-6">
+		 		<h4>Acerca de nuestro trabajo.</h4>
+		 		<p>Somos estudiantes de la Universidad Peruana de Ciencias Aplicadas y se ha realizo esta investigación para determinar la probabilidad de que una mujer pueda tener diabetes. </p>
+		 		<p>Para esta investigación se ha tomado una base de datos validada por National Institute of Diabetes and Digestive and Kidney Diseases del 9 Mayo de 1990 y actualizado a la fecha del 28 de Febrero de 2011.</p>
+		 		<p>Se ha utilizado para esta investigación la implementación de Weka (machine learning) para obtener los datos estadísticos y el autoaprendizaje del sistema. Los algoritmos propuestos para el trabajo fueron tres: J48, SimpleLogistic y NativeBayes del cual se eligió J48 debido a su Kappa Static</p>
+		 		<p>Esperamos que el trabajo realizado le pueda servir de utilidad.</p>
+	 		</div>
+	 	</div><! --/row -->
+		
+		<br><br><br>
+
+
+	 	<div class="row">
+	 		<div class="col-lg-6">
+	 			<img class="img-responsive" src="@routes.Assets.at("assets/img/pie.png")" alt="">
+	 		</div>
+	 		
+	 		<div class="col-lg-6">
+	 			<h1>Resultados del Algoritmo J48</h1>
+		 		<h4>Correctly Classified Instances: <br>
+				@summary.correctly_classified_instances &nbsp @summary.correctly_classified_instances_2 %</h4>
+
+			    <h4>Incorrectly Classified Instances: <br>
+			    @summary.incorrectly_classified_instances &nbsp @summary.incorrectly_classified_instances_2 %</h4>
+
+			    <h4>Kappa Statistic: <br>
+			    @summary.kappa_statistic</h4>
+
+			    <h4>Mean absolute error: <br>
+			    @summary.mean_absolute_error</h4>
+
+			    <h4>Root mean squared error: <br>
+				@summary.root_mean_squared_error</h4>
+
+				<h4>Relative absolute error: <br>
+				@summary.relative_absolute_error %</h4>
+
+				<h4>Root relative squared error: <br>
+				@summary.root_relative_squared_error %</h4>
+
+				<h4>Total Number of Instances: <br>
+				@summary.total_number_of_instances</h4>
+	 		</div>
+	 	</div><! --/row -->
+	 </div><! --/container -->
+}
